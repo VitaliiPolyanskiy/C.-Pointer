@@ -46,7 +46,7 @@ int main()
 
     // Использование операции разыменования для того, чтобы изменить значение, на которое указывает 
     // указатель.
-    *pPointer = 7;
+    *pPointer = 10;
 
     cout << "Value of nNumber: " << nNumber << endl;
     cout << "Value of nNumber: " << *pPointer << endl;
@@ -56,9 +56,9 @@ int main()
     // Если указатель не инициализируется адресом существующей переменной, то его необходимо, 
     // обнулить, то есть записать в него 0. Нулевой адрес является зарезервированным системой, 
     // поэтому созданные переменные никогда не получат такой адрес.
-    int* pPointer1 = 0;
-    int* pPointer2 = 0;
-    double* pPointer3 = 0;
+    int* pPointer1 = nullptr;
+    int* pPointer2 = nullptr;
+    double* pPointer3 = nullptr;
 
     pPointer1 = &nNumber;
 
